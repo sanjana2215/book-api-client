@@ -1,0 +1,15 @@
+.bodyadd{
+    margin-top: 1vh;
+    margin-left: 25vw;;
+    width: auto;
+    max-width: 50vw;
+    border-style: double;
+    padding-bottom: 2vh;
+    background-color: rgb(216, 233, 248);
+}
+input {
+    width:40vw;
+}
+.submit{
+    margin-top: 2vh;
+}

@@ -1,0 +1,21 @@
+.tile{
+    margin-top: 2vh;
+    width: 90vw;
+    height: 18vh;
+    background-color: rgb(207, 223, 243);
+    align-items: center;
+    margin-left: 5vw;
+    border-radius:10px ;
+    padding: 2px;
+}
+.descr{
+    display: flex;
+}
+.author{
+    text-align: left;
+    margin-left: 5vw;
+}
+.des{
+    margin-right: 5vw;
+    margin-left: 63vw;
+}

@@ -1,0 +1,9 @@
+.button{
+    margin:auto;
+    margin-top: 1vh;
+    width: 10vh;
+    background-color: rgb(75, 127, 182);
+    align-items:center ;
+    border-style: solid ;
+    border-width:2px;
+}

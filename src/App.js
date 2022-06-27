@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import GetList from './components/GetList.js';
+import AddNew from './components/AddNew.js';
+import { useState } from 'react';
 
 function App() {
+  const [fetch,setFetch]=useState(false);
+  const [push,setPush]=useState(false);
+  const handleClick1= (e)=>{
+     setFetch(true);
+     setPush(false);
+  }
+  const handleClick2= (e)=>{
+    setFetch(false);
+    setPush(true);
+ }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+     <h1>Book API</h1>
+     </div>
+     
+     <div className='body'>
+      <div className='fetchlist' >
+        <h2 onClick={handleClick1}>Get the Book List</h2>
+      </div>
+      <div className='addnew' onClick={handleClick2}>
+        <h2 onClick={handleClick2}>Add a new book</h2>
+      </div>
+     </div>
+     <div className='fullbody'>
+     {fetch&&<GetList/>}
+     {push&&<AddNew/>
+     }</div>
     </div>
   );
 }
